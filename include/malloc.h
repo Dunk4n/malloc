@@ -20,7 +20,7 @@
 # include <pthread.h>
 # include <unistd.h>
 # include <sys/mman.h>
-# include <linux/mman.h>
+//# include <linux/mman.h>
 # include <sys/time.h>
 # include <sys/resource.h>
 # include <errno.h>

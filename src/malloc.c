@@ -1309,8 +1309,13 @@ uint8_t Fu8__generate_new_tiny_heap_in_structure_malloc_data(struct cstc_malloc_
     /**
     * Getting virtual memory
     */
+#if __APPLE__
+    ptr_vd_mmaped_memory = MAP_FAILED;
+    ptr_vd_mmaped_memory = mmap(NULL, ptr_cstc_pssd_malloc_data->u64_tiny_heap_size_, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+#elif __linux__
     ptr_vd_mmaped_memory = MAP_FAILED;
     ptr_vd_mmaped_memory = mmap(NULL, ptr_cstc_pssd_malloc_data->u64_tiny_heap_size_, PROT_READ | PROT_WRITE, MAP_POPULATE | MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+#endif
 
     /**
     * Check if function to get virtual memory succeeded
@@ -1515,8 +1520,13 @@ uint8_t Fu8__generate_new_small_heap_in_structure_malloc_data(struct cstc_malloc
     /**
     * Getting virtual memory
     */
+#if __APPLE__
+    ptr_vd_mmaped_memory = MAP_FAILED;
+    ptr_vd_mmaped_memory = mmap(NULL, ptr_cstc_pssd_malloc_data->u64_small_heap_size_, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+#elif __linux__
     ptr_vd_mmaped_memory = MAP_FAILED;
     ptr_vd_mmaped_memory = mmap(NULL, ptr_cstc_pssd_malloc_data->u64_small_heap_size_, PROT_READ | PROT_WRITE, MAP_POPULATE | MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+#endif
 
     /**
     * Check if function to get virtual memory succeeded
@@ -1721,8 +1731,13 @@ uint8_t Fu8__generate_new_large_heap_in_structure_malloc_data(struct cstc_malloc
     /**
     * Getting virtual memory
     */
+#if __APPLE__
+    ptr_vd_mmaped_memory = MAP_FAILED;
+    ptr_vd_mmaped_memory = mmap(NULL, u64_pssd_length_of_large_heap + sizeof(struct sstc_chunk_header) + sizeof(struct sstc_heap_header), PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1, 0);
+#elif __linux__
     ptr_vd_mmaped_memory = MAP_FAILED;
     ptr_vd_mmaped_memory = mmap(NULL, u64_pssd_length_of_large_heap + sizeof(struct sstc_chunk_header) + sizeof(struct sstc_heap_header), PROT_READ | PROT_WRITE, MAP_POPULATE | MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+#endif
 
     /**
     * Check if function to get virtual memory succeeded
@@ -2202,19 +2217,19 @@ void Fv__simple_display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_tota
                 {
                 if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_tiny_status_ == TRUE)
                     {
-                    ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_small_status_ == TRUE)
                     {
-                    ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else
                     {
-                    ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 }
 
-            ft_printf("0x%lX - 0x%lX : %" PRIu64 " octets\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_);
+            ft_printf("0x%" PRIX64 " - 0x%" PRIX64 " : %" PRIu64 " octets\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_);
 
             u64_lcl_total_allocated_memory = u64_lcl_total_allocated_memory + ptr_sstc_lcl_actual_chunk->u64_data_length_;
             }
@@ -2319,19 +2334,19 @@ void Fv__simple_display_heap_ex(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_t
                 {
                 if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_tiny_status_ == TRUE)
                     {
-                    ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_small_status_ == TRUE)
                     {
-                    ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else
                     {
-                    ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 }
 
-            ft_printf("0x%lX - 0x%lX : %" PRIu64 " octets\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_);
+            ft_printf("0x%" PRIX64 " - 0x%" PRIX64 " : %" PRIu64 " octets\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_);
 
             u64_lcl_cnt = 0;
             while((uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_ - u64_lcl_cnt >= 16)
@@ -2485,7 +2500,7 @@ void Fv__display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_total_alloc
             * Treat the case when the actual chunk is not free
             */
 
-            ft_printf("ALLOCATED: 0x%lX - 0x%lX : %" PRIu64 " octets  prev %" PRIu64 "\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_previous_data_length_);
+            ft_printf("ALLOCATED: 0x%" PRIX64 " - 0x%" PRIX64 " : %" PRIu64 " octets  prev %" PRIu64 "\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_previous_data_length_);
 
             u64_lcl_total_allocated_memory = u64_lcl_total_allocated_memory + ptr_sstc_lcl_actual_chunk->u64_data_length_;
 
@@ -2522,7 +2537,7 @@ void Fv__display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_total_alloc
             * Treat the case when the actual chunk is free
             */
 
-            ft_printf("FREE     : 0x%lX - 0x%lX : %" PRIu64 " octets  prev %" PRIu64 "\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_previous_data_length_);
+            ft_printf("FREE     : 0x%" PRIX64 " - 0x%" PRIX64 " : %" PRIu64 " octets  prev %" PRIu64 "\n", (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header), (uintptr_t) ptr_vd_pssd_heap + u64_lcl_position_in_heap + sizeof(struct sstc_chunk_header) + ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_data_length_, (uint64_t) ptr_sstc_lcl_actual_chunk->u64_previous_data_length_);
 
             /**
             * Checking for overflow
@@ -2691,7 +2706,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_tiny_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -2787,7 +2802,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_small_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -2883,7 +2898,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_large_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -5910,7 +5925,7 @@ void free(void *ptr)
                     /**
                     * Freeing the actual large heap
                     */
-                    ft_printf("MUUUUUNNNNNMAAAAP %lu\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
+                    ft_printf("MUUUUUNNNNNMAAAAP %" PRIu64 "\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
                     s32_lcl_return_from_function = -1;
                     s32_lcl_return_from_function = munmap((void *) ptr_sstc_lcl_actual_heap, ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
 
@@ -6247,7 +6262,7 @@ void free(void *ptr)
                     /**
                     * Freeing the actual large heap
                     */
-                    ft_printf("MUUUUUNNNNNMAAAAP %lu\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
+                    ft_printf("MUUUUUNNNNNMAAAAP %" PRIu64 "\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
                     s32_lcl_return_from_function = -1;
                     s32_lcl_return_from_function = munmap((void *) ptr_sstc_lcl_actual_heap, ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
 
