@@ -1,0 +1,19 @@
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include "include/malloc.h"
+
+int main(void)
+    {
+    int i;
+    char *addr;
+
+    i = 0;
+    while(i < 1024)
+        {
+        addr = (char*)malloc(1024);
+        addr[0] = 42;
+        i++;
+        }
+    return (0);
+    }
