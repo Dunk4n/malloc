@@ -65,7 +65,7 @@ fclean: clean
 
 $(NAME): options $(OBJ)
 	@$(MAKE) -C $(LIB_DIRECTORY) --no-print-directory
-	@$(CC) -shared $(CFLAGS) -o $@ $(OBJ) $(LDFLAGS)
+	@$(CC) -shared $(CFLAGS) -o $@ $(OBJ) ./libft/printf/*.o $(LDFLAGS)
 	@echo "  BUILD    $@"
 	@ln -f -s $@ libft_malloc.so
 	@echo "  BUILD    libft_malloc.so"
