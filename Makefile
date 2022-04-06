@@ -70,13 +70,13 @@ $(NAME): options $(OBJ)
 	@ln -f -s $@ libft_malloc.so
 	@echo "  BUILD    libft_malloc.so"
 
-TEST: re
-	gcc -o test0 test0.c -L. -lft_malloc
-	gcc -o test1 test1.c -L. -lft_malloc
-	gcc -o test2 test2.c -L. -lft_malloc
-	gcc -o test3 test3.c -L. -lft_malloc
-	gcc -o test4 test4.c -L. -lft_malloc
-	gcc -o test5 test5.c -L. -lft_malloc
+#TEST: re
+#	gcc -o test0 test0.c -L. -lft_malloc
+#	gcc -o test1 test1.c -L. -lft_malloc
+#	gcc -o test2 test2.c -L. -lft_malloc
+#	gcc -o test3 test3.c -L. -lft_malloc
+#	gcc -o test4 test4.c -L. -lft_malloc
+#	gcc -o test5 test5.c -L. -lft_malloc
 
 re:	fclean	all
 
