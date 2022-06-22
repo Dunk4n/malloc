@@ -2217,15 +2217,15 @@ void Fv__simple_display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_tota
                 {
                 if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_tiny_status_ == TRUE)
                     {
-                    ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_small_status_ == TRUE)
                     {
-                    ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else
                     {
-                    ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 }
 
@@ -2334,15 +2334,15 @@ void Fv__simple_display_heap_ex(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_t
                 {
                 if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_tiny_status_ == TRUE)
                     {
-                    ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else if(((struct sstc_heap_header *) ptr_vd_pssd_heap)->u64_small_status_ == TRUE)
                     {
-                    ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 else
                     {
-                    ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_vd_pssd_heap);
+                    ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_vd_pssd_heap);
                     }
                 }
 
@@ -2706,7 +2706,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_tiny_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("TINY : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("TINY : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -2802,7 +2802,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_small_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("SMALL : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("SMALL : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -2898,7 +2898,7 @@ void Fv__custom_show_alloc_mem(void)
     ptr_sstc_lcl_actual_heap = cstc_glbl_malloc_data.ptr_sstc_heap_large_list_;
     while(ptr_sstc_lcl_actual_heap != NULL)
         {
-        ft_printf("LARGE : 0x%" PRIX64 "\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
+        ft_printf("LARGE : 0x%lX\n", (uintptr_t) ptr_sstc_lcl_actual_heap);
         (void) Fv__display_heap((void *) ptr_sstc_lcl_actual_heap, &u64_lcl_tmp_allocated_memory);
 
         if(u64_lcl_total_allocated_memory <= (UINT64_MAX - u64_lcl_tmp_allocated_memory))
@@ -3260,6 +3260,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the tiny heap list in the structure malloc data
                 */
@@ -3298,6 +3299,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate the function to generate new tiny heap failed
@@ -3338,6 +3340,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the tiny heap list in the structure malloc data
                 */
@@ -3376,6 +3379,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -3410,6 +3414,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the tiny heap list in the structure malloc data
                 */
@@ -3448,6 +3453,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate no free chunk was found in the new created heap
@@ -3501,6 +3507,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the tiny heap list in the structure malloc data
                     */
@@ -3539,6 +3546,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -3594,6 +3602,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the tiny heap list in the structure malloc data
                     */
@@ -3632,6 +3641,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to generate new tiny heap failed
@@ -3672,6 +3682,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the tiny heap list in the structure malloc data
                     */
@@ -3710,6 +3721,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -3744,6 +3756,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the tiny heap list in the structure malloc data
                     */
@@ -3782,6 +3795,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the tiny heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate no free chunk was found in the new created heap
@@ -3929,6 +3943,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the small heap list in the structure malloc data
                 */
@@ -3967,6 +3982,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate the function to generate new small heap failed
@@ -4007,6 +4023,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the small heap list in the structure malloc data
                 */
@@ -4045,6 +4062,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -4079,6 +4097,7 @@ void *malloc(size_t size)
                 fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                 #endif
 
+#ifdef THREAD_SAFE
                 /**
                 * Unlocking the mutex to access the small heap list in the structure malloc data
                 */
@@ -4117,6 +4136,7 @@ void *malloc(size_t size)
                     * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                     */
                     } 
+#endif
 
                 /**
                 * Return failure to indicate no free chunk was found in the new created heap
@@ -4170,6 +4190,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the small heap list in the structure malloc data
                     */
@@ -4208,6 +4229,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -4263,6 +4285,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the small heap list in the structure malloc data
                     */
@@ -4301,6 +4324,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to generate new small heap failed
@@ -4341,6 +4365,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the small heap list in the structure malloc data
                     */
@@ -4379,6 +4404,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate the function to search and allocate a free chunk in the new created heap failed
@@ -4413,6 +4439,7 @@ void *malloc(size_t size)
                     fprintf(stderr, "\033[1;31mERROR\033[0m\n");
                     #endif
 
+#ifdef THREAD_SAFE
                     /**
                     * Unlocking the mutex to access the small heap list in the structure malloc data
                     */
@@ -4451,6 +4478,7 @@ void *malloc(size_t size)
                         * Treat the case when function to unlock the mutex to access the small heap list in the structure malloc data succeeded
                         */
                         } 
+#endif
 
                     /**
                     * Return failure to indicate no free chunk was found in the new created heap
