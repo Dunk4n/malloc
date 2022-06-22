@@ -6,7 +6,7 @@
 /*   By: niduches <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 15:21:55 by niduches          #+#    #+#             */
-/*   Updated: 2022/06/20 15:14:17 by niduches         ###   ########.fr       */
+/*   Updated: 2022/06/22 13:38:39 by niduches         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,7 +160,8 @@ struct cstc_malloc_data
     uint64_t                 u64_small_alloc_max_;
     };
 
-struct cstc_malloc_data cstc_glbl_malloc_data;
+struct cstc_malloc_data  cstc_glbl_malloc_data;
+struct cstc_malloc_data *ptr_cstc_glbl_malloc_data;
 
 uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_malloc_data);
 uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_malloc_data);
