@@ -30,15 +30,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -63,15 +63,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -121,15 +121,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the page size is zero or lower\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the page size is zero or lower\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -161,15 +161,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -212,15 +212,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -251,15 +251,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny heap failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny heap failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -297,15 +297,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex tiny heap failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex tiny heap failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -336,15 +336,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small heap failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small heap failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -382,15 +382,15 @@ uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex small heap failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex small heap failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -425,15 +425,15 @@ uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -458,15 +458,15 @@ uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -516,15 +516,15 @@ uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -677,15 +677,15 @@ uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -717,15 +717,15 @@ uint8_t Fu8__load_parameter_value_from_env_in_structure_malloc_data(struct cstc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to update the heap size failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to update the heap size failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -759,15 +759,15 @@ uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_m
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -792,15 +792,15 @@ uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_m
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is already initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is already initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -890,15 +890,15 @@ uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_m
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to load the parameter value from the env failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to load the parameter value from the env failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -932,15 +932,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -965,15 +965,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1019,15 +1019,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1058,15 +1058,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
@@ -1099,15 +1099,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex large failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex large failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
@@ -1141,15 +1141,15 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
@@ -1240,15 +1240,15 @@ uint8_t Fu8__generate_new_tiny_heap_in_structure_malloc_data(struct cstc_malloc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1273,15 +1273,15 @@ uint8_t Fu8__generate_new_tiny_heap_in_structure_malloc_data(struct cstc_malloc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1327,15 +1327,15 @@ uint8_t Fu8__generate_new_tiny_heap_in_structure_malloc_data(struct cstc_malloc_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1399,15 +1399,15 @@ uint8_t Fu8__generate_new_tiny_heap_in_structure_malloc_data(struct cstc_malloc_
     else
         {
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1451,15 +1451,15 @@ uint8_t Fu8__generate_new_small_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1484,15 +1484,15 @@ uint8_t Fu8__generate_new_small_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1538,15 +1538,15 @@ uint8_t Fu8__generate_new_small_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1610,15 +1610,15 @@ uint8_t Fu8__generate_new_small_heap_in_structure_malloc_data(struct cstc_malloc
     else
         {
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1662,15 +1662,15 @@ uint8_t Fu8__generate_new_large_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1695,15 +1695,15 @@ uint8_t Fu8__generate_new_large_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the structure malloc data is not initialized\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1749,15 +1749,15 @@ uint8_t Fu8__generate_new_large_heap_in_structure_malloc_data(struct cstc_malloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get virtual memory failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1821,15 +1821,15 @@ uint8_t Fu8__generate_new_large_heap_in_structure_malloc_data(struct cstc_malloc
     else
         {
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1873,15 +1873,15 @@ uint8_t Fu8__alloc_chunk_in_heap(void *ptr_vd_pssd_heap, uint64_t u64_pssd_size_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1906,15 +1906,15 @@ uint8_t Fu8__alloc_chunk_in_heap(void *ptr_vd_pssd_heap, uint64_t u64_pssd_size_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the size to allocate is zero\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the size to allocate is zero\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -1939,15 +1939,15 @@ uint8_t Fu8__alloc_chunk_in_heap(void *ptr_vd_pssd_heap, uint64_t u64_pssd_size_
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the pointer to the new allocated data to return is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the pointer to the new allocated data to return is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2159,15 +2159,15 @@ void Fv__simple_display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_tota
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2274,15 +2274,15 @@ void Fv__simple_display_heap_ex(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_t
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2376,15 +2376,15 @@ void Fv__simple_display_heap_ex(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_t
                 else
                     {
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -2438,15 +2438,15 @@ void Fv__display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_total_alloc
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the heap is not correctly pointing passed as an argument of the function\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2514,15 +2514,15 @@ void Fv__display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_total_alloc
             else
                 {
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -2549,15 +2549,15 @@ void Fv__display_heap(void *ptr_vd_pssd_heap, uint64_t *ptr_u64_pssd_total_alloc
             else
                 {
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -2632,15 +2632,15 @@ void Fv__custom_show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -2679,15 +2679,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2736,15 +2736,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2775,15 +2775,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2832,15 +2832,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2871,15 +2871,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2926,15 +2926,15 @@ void Fv__custom_show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -2997,15 +2997,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -3046,15 +3046,15 @@ void *malloc(size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the virtual memory of the actual process failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the virtual memory of the actual process failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -3079,15 +3079,15 @@ void *malloc(size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -3118,15 +3118,15 @@ void *malloc(size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the data segment of the actual process failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the data segment of the actual process failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -3151,15 +3151,15 @@ void *malloc(size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -3200,15 +3200,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -3249,15 +3249,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new tiny heap failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new tiny heap failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -3277,15 +3277,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -3329,15 +3329,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -3357,15 +3357,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -3403,15 +3403,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -3431,15 +3431,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -3496,15 +3496,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -3524,15 +3524,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -3591,15 +3591,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new tiny heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new tiny heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -3619,15 +3619,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -3671,15 +3671,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -3699,15 +3699,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -3745,15 +3745,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -3773,15 +3773,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -3834,15 +3834,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -3883,15 +3883,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -3932,15 +3932,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new small heap failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new small heap failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -3960,15 +3960,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -4012,15 +4012,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -4040,15 +4040,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -4086,15 +4086,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -4114,15 +4114,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -4179,15 +4179,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -4207,15 +4207,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -4274,15 +4274,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new small heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new small heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -4302,15 +4302,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -4354,15 +4354,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to search and allocate a free chunk in the new created heap failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -4382,15 +4382,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -4428,15 +4428,15 @@ void *malloc(size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    no free chunk was found in the new created heap\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
 #ifdef THREAD_SAFE
@@ -4456,15 +4456,15 @@ void *malloc(size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -4517,15 +4517,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -4566,15 +4566,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -4606,15 +4606,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new large heap failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to generate new large heap failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
 #ifdef THREAD_SAFE
@@ -4634,15 +4634,15 @@ void *malloc(size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -4692,15 +4692,15 @@ void *malloc(size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -4775,15 +4775,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -4866,15 +4866,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -4905,15 +4905,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -4932,15 +4932,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -4983,15 +4983,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -5010,15 +5010,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -5037,15 +5037,15 @@ void free(void *ptr)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -5088,15 +5088,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -5178,15 +5178,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
 #ifdef THREAD_SAFE
@@ -5206,15 +5206,15 @@ void free(void *ptr)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -5233,15 +5233,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5260,15 +5260,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -5311,15 +5311,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5362,15 +5362,15 @@ void free(void *ptr)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -5389,15 +5389,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5440,15 +5440,15 @@ void free(void *ptr)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -5621,15 +5621,15 @@ void free(void *ptr)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the actual heap is not in the tiny list and not in the small list\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    the actual heap is not in the tiny list and not in the small list\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
 #ifdef THREAD_SAFE
@@ -5649,15 +5649,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5676,15 +5676,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -5703,15 +5703,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -5754,15 +5754,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -5805,15 +5805,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5832,15 +5832,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -5883,15 +5883,15 @@ void free(void *ptr)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -5953,7 +5953,6 @@ void free(void *ptr)
                     /**
                     * Freeing the actual large heap
                     */
-                    ft_printf("MUUUUUNNNNNMAAAAP %" PRIu64 "\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
                     s32_lcl_return_from_function = -1;
                     s32_lcl_return_from_function = munmap((void *) ptr_sstc_lcl_actual_heap, ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
 
@@ -5967,15 +5966,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
 #ifdef THREAD_SAFE
@@ -5995,15 +5994,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6022,15 +6021,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6049,15 +6048,15 @@ void free(void *ptr)
                                     */
 
                                     #ifdef DEVELOPEMENT
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                     #endif
 
                                     #ifdef DEMO
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                     #endif
 
                                     #ifdef PRODUCTION
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                     #endif
 
                                     /**
@@ -6100,15 +6099,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6151,15 +6150,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6178,15 +6177,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6229,15 +6228,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6290,7 +6289,6 @@ void free(void *ptr)
                     /**
                     * Freeing the actual large heap
                     */
-                    ft_printf("MUUUUUNNNNNMAAAAP %" PRIu64 "\n", ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
                     s32_lcl_return_from_function = -1;
                     s32_lcl_return_from_function = munmap((void *) ptr_sstc_lcl_actual_heap, ptr_sstc_lcl_actual_heap->u64_length_of_data_ + sizeof(struct sstc_heap_header));
 
@@ -6304,15 +6302,15 @@ void free(void *ptr)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to free the actual large heap failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
 #ifdef THREAD_SAFE
@@ -6332,15 +6330,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6359,15 +6357,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6386,15 +6384,15 @@ void free(void *ptr)
                                     */
 
                                     #ifdef DEVELOPEMENT
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                     #endif
 
                                     #ifdef DEMO
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                     #endif
 
                                     #ifdef PRODUCTION
-                                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                     #endif
 
                                     /**
@@ -6437,15 +6435,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6488,15 +6486,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6515,15 +6513,15 @@ void free(void *ptr)
                                 */
 
                                 #ifdef DEVELOPEMENT
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                                 #endif
 
                                 #ifdef DEMO
-                                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                                 #endif
 
                                 #ifdef PRODUCTION
-                                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                                 #endif
 
                                 /**
@@ -6566,15 +6564,15 @@ void free(void *ptr)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -6629,15 +6627,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -6656,15 +6654,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -6683,15 +6681,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -6734,15 +6732,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -6785,15 +6783,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -6812,15 +6810,15 @@ void free(void *ptr)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -6863,15 +6861,15 @@ void free(void *ptr)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -6944,15 +6942,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -6999,15 +6997,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the virtual memory of the actual process failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the virtual memory of the actual process failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7032,15 +7030,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7071,15 +7069,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the data segment of the actual process failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to get the resource limit of the data segment of the actual process failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7104,15 +7102,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    if the size to allocate is bigger than the maximun\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7144,15 +7142,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7183,15 +7181,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7210,15 +7208,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7261,15 +7259,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -7288,15 +7286,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7315,15 +7313,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7366,15 +7364,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7454,15 +7452,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7481,15 +7479,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7508,15 +7506,15 @@ void *realloc(void *ptr, size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -7559,15 +7557,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7610,15 +7608,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7637,15 +7635,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7688,15 +7686,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7747,15 +7745,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7774,15 +7772,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7801,15 +7799,15 @@ void *realloc(void *ptr, size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -7852,15 +7850,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7903,15 +7901,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -7930,15 +7928,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -7981,15 +7979,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -8027,15 +8025,15 @@ void *realloc(void *ptr, size_t size)
                 else
                     {
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -8074,15 +8072,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -8101,15 +8099,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -8128,15 +8126,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -8179,15 +8177,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -8473,15 +8471,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -8500,15 +8498,15 @@ void *realloc(void *ptr, size_t size)
                     */
 
                     #ifdef DEVELOPEMENT
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                     #endif
 
                     #ifdef DEMO
-                    fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                     #endif
 
                     #ifdef PRODUCTION
-                    fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                    ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                     #endif
 
                     /**
@@ -8551,15 +8549,15 @@ void *realloc(void *ptr, size_t size)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -8727,15 +8725,15 @@ void *realloc(void *ptr, size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -8754,15 +8752,15 @@ void *realloc(void *ptr, size_t size)
                             */
 
                             #ifdef DEVELOPEMENT
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                             #endif
 
                             #ifdef DEMO
-                            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                             #endif
 
                             #ifdef PRODUCTION
-                            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                             #endif
 
                             /**
@@ -8805,15 +8803,15 @@ void *realloc(void *ptr, size_t size)
                         */
 
                         #ifdef DEVELOPEMENT
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                         #endif
 
                         #ifdef DEMO
-                        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                         #endif
 
                         #ifdef PRODUCTION
-                        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                         #endif
 
                         /**
@@ -8868,15 +8866,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -8895,15 +8893,15 @@ void *realloc(void *ptr, size_t size)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -8946,15 +8944,15 @@ void *realloc(void *ptr, size_t size)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -8992,15 +8990,15 @@ void *realloc(void *ptr, size_t size)
             else
                 {
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The unsigned 64 integer counter variable is going to overflow\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -9069,15 +9067,15 @@ void show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9116,15 +9114,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9155,15 +9153,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9182,15 +9180,15 @@ void show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9233,15 +9231,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9260,15 +9258,15 @@ void show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9287,15 +9285,15 @@ void show_alloc_mem(void)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -9338,15 +9336,15 @@ void show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9451,15 +9449,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -9478,15 +9476,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -9505,15 +9503,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9556,15 +9554,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9607,15 +9605,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9634,15 +9632,15 @@ void show_alloc_mem(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9685,15 +9683,15 @@ void show_alloc_mem(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9765,15 +9763,15 @@ void show_alloc_mem_ex(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9812,15 +9810,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9851,15 +9849,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9878,15 +9876,15 @@ void show_alloc_mem_ex(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9929,15 +9927,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -9956,15 +9954,15 @@ void show_alloc_mem_ex(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -9983,15 +9981,15 @@ void show_alloc_mem_ex(void)
                 */
 
                 #ifdef DEVELOPEMENT
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
                 #endif
 
                 #ifdef DEMO
-                fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
                 #endif
 
                 #ifdef PRODUCTION
-                fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+                ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
                 #endif
 
                 /**
@@ -10034,15 +10032,15 @@ void show_alloc_mem_ex(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10147,15 +10145,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the large heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -10174,15 +10172,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
     /**
@@ -10201,15 +10199,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -10252,15 +10250,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -10303,15 +10301,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the small heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -10330,15 +10328,15 @@ void show_alloc_mem_ex(void)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10381,15 +10379,15 @@ void show_alloc_mem_ex(void)
         */
 
         #ifdef DEVELOPEMENT
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex to access the tiny heap list in the structure malloc data failed\n", __FILE__, __func__, __LINE__);
         #endif
 
         #ifdef DEMO
-        fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
         #endif
 
         #ifdef PRODUCTION
-        fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
         #endif
 
         /**
@@ -10410,8 +10408,29 @@ void show_alloc_mem_ex(void)
 
 void *calloc(size_t nmemb, size_t size)
     {
-    (void) nmemb;
-    (void) size;
+    uint8_t  *ptr_u8_lcl_mem;
+    uint64_t u64_lcl_cnt;
+
+    ptr_u8_lcl_mem = NULL;
+    u64_lcl_cnt = 0;
+
+    if(nmemb == 0 || size == 0)
+        return (NULL);
+
+    if(nmemb > UINT64_MAX / size)
+        return (NULL);
+
+    ptr_u8_lcl_mem = malloc(nmemb * size);
+    if(ptr_u8_lcl_mem != NULL)
+        {
+        u64_lcl_cnt = 0;
+        while(u64_lcl_cnt < nmemb * size)
+            {
+            ptr_u8_lcl_mem[u64_lcl_cnt] = 0;
+
+            u64_lcl_cnt++;
+            }
+        }
 
     return (NULL);
     }
@@ -10463,15 +10482,15 @@ int mallopt(int param, int value)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to init the global structure malloc failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10512,15 +10531,15 @@ int mallopt(int param, int value)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10566,15 +10585,15 @@ int mallopt(int param, int value)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10609,15 +10628,15 @@ int mallopt(int param, int value)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
@@ -10663,15 +10682,15 @@ int mallopt(int param, int value)
             */
 
             #ifdef DEVELOPEMENT
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to unlock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
             #endif
 
             #ifdef DEMO
-            fprintf(stderr, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
             #endif
 
             #ifdef PRODUCTION
-            fprintf(stderr, "\033[1;31mERROR\033[0m\n");
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
             #endif
 
             /**
