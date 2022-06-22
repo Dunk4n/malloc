@@ -6,13 +6,14 @@
 /*   By: niduches <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 11:39:11 by niduches          #+#    #+#             */
-/*   Updated: 2022/06/20 15:27:46 by niduches         ###   ########.fr       */
+/*   Updated: 2022/06/22 13:43:30 by niduches         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "malloc.h"
 
-struct cstc_malloc_data cstc_glbl_malloc_data = {0};
+struct cstc_malloc_data  cstc_glbl_malloc_data = {0};
+struct cstc_malloc_data *ptr_cstc_glbl_malloc_data = NULL;
 
 uint8_t Fu8__update_heap_size_in_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_malloc_data)
     {
@@ -844,7 +845,11 @@ uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_m
     ptr_cstc_pssd_malloc_data->u64_number_of_tiny_heap_ = 0;
     ptr_cstc_pssd_malloc_data->u64_tiny_heap_size_ = 0;
 #ifdef THREAD_SAFE
-    (void) pthread_mutex_init(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_, NULL);
+    ptr_cstc_glbl_malloc_data = ptr_cstc_pssd_malloc_data;
+    if(ptr_cstc_glbl_malloc_data != NULL)
+        {
+        (void) pthread_mutex_init(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_, NULL);
+        }
 #endif
 
     ptr_cstc_pssd_malloc_data->ptr_sstc_heap_small_list_ = NULL;
@@ -853,18 +858,27 @@ uint8_t Fu8__init_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_m
     ptr_cstc_pssd_malloc_data->u64_number_of_small_heap_ = 0;
     ptr_cstc_pssd_malloc_data->u64_small_heap_size_ = 0;
 #ifdef THREAD_SAFE
-    (void) pthread_mutex_init(&ptr_cstc_pssd_malloc_data->etype_mutex_small_, NULL);
+    if(ptr_cstc_glbl_malloc_data != NULL)
+        {
+        (void) pthread_mutex_init(&ptr_cstc_glbl_malloc_data->etype_mutex_small_, NULL);
+        }
 #endif
 
     ptr_cstc_pssd_malloc_data->ptr_sstc_heap_large_list_ = NULL;
     ptr_cstc_pssd_malloc_data->ptr_sstc_last_heap_large_ = NULL;
     ptr_cstc_pssd_malloc_data->u64_number_of_large_heap_ = 0;
 #ifdef THREAD_SAFE
-    (void) pthread_mutex_init(&ptr_cstc_pssd_malloc_data->etype_mutex_large_, NULL);
+    if(ptr_cstc_glbl_malloc_data != NULL)
+        {
+        (void) pthread_mutex_init(&ptr_cstc_glbl_malloc_data->etype_mutex_large_, NULL);
+        }
 #endif
 
 #ifdef THREAD_SAFE
-    (void) pthread_mutex_init(&ptr_cstc_pssd_malloc_data->etype_mutex_parameter_, NULL);
+    if(ptr_cstc_glbl_malloc_data != NULL)
+        {
+        (void) pthread_mutex_init(&ptr_cstc_glbl_malloc_data->etype_mutex_parameter_, NULL);
+        }
 #endif
     ptr_cstc_pssd_malloc_data->u64_tiny_alloc_max_  = DEFAULT_TINY_ALLOC_MAX;
     ptr_cstc_pssd_malloc_data->u64_small_alloc_max_ = DEFAULT_SMALL_ALLOC_MAX;
@@ -1003,173 +1017,174 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
 #endif
 
 #ifdef THREAD_SAFE
-    /**
-    * Locking the mutex tiny
-    */
-    s32_lcl_return_from_function = RETURN_FAILURE;
-    s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-
-    /**
-    * Check if function to lock the mutex tiny succeeded
-    */
-    if(s32_lcl_return_from_function != 0)
+    if(ptr_cstc_glbl_malloc_data != NULL)
         {
         /**
-        * Treat the case when the function to lock the mutex tiny failed
-        */
-
-        #ifdef DEVELOPEMENT
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny failed\n", __FILE__, __func__, __LINE__);
-        #endif
-
-        #ifdef DEMO
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
-        #endif
-
-        #ifdef PRODUCTION
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
-        #endif
+         * Locking the mutex tiny
+         */
+        s32_lcl_return_from_function = RETURN_FAILURE;
+        s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
 
         /**
-        * Return failure to indicate the function to lock the mutex tiny failed
-        */
-        return (RETURN_FAILURE);
-        }
-    else
-        {
-        /**
-        * Treat the case when function to lock the mutex tiny succeeded
-        */
-        } 
+         * Check if function to lock the mutex tiny succeeded
+         */
+        if(s32_lcl_return_from_function != 0)
+            {
+            /**
+             * Treat the case when the function to lock the mutex tiny failed
+             */
 
-    /**
-    * Locking the mutex small
-    */
-    s32_lcl_return_from_function = RETURN_FAILURE;
-    s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_pssd_malloc_data->etype_mutex_small_);
-
-    /**
-    * Check if function to lock the mutex small succeeded
-    */
-    if(s32_lcl_return_from_function != 0)
-        {
-        /**
-        * Treat the case when the function to lock the mutex small failed
-        */
-
-        #ifdef DEVELOPEMENT
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small failed\n", __FILE__, __func__, __LINE__);
-        #endif
-
-        #ifdef DEMO
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
-        #endif
-
-        #ifdef PRODUCTION
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
-        #endif
-
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-
-        /**
-        * Return failure to indicate the function to lock the mutex small failed
-        */
-        return (RETURN_FAILURE);
-        }
-    else
-        {
-        /**
-        * Treat the case when function to lock the mutex small succeeded
-        */
-        } 
-
-    /**
-    * Locking the mutex large
-    */
-    s32_lcl_return_from_function = RETURN_FAILURE;
-    s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_pssd_malloc_data->etype_mutex_large_);
-
-    /**
-    * Check if function to lock the mutex large succeeded
-    */
-    if(s32_lcl_return_from_function != 0)
-        {
-        /**
-        * Treat the case when the function to lock the mutex large failed
-        */
-
-        #ifdef DEVELOPEMENT
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex large failed\n", __FILE__, __func__, __LINE__);
-        #endif
-
-        #ifdef DEMO
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
-        #endif
-
-        #ifdef PRODUCTION
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
-        #endif
-
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_small_);
-
-        /**
-        * Return failure to indicate the function to lock the mutex large failed
-        */
-        return (RETURN_FAILURE);
-        }
-    else
-        {
-        /**
-        * Treat the case when function to lock the mutex large succeeded
-        */
-        } 
-
-    /**
-    * Locking the mutex parameter
-    */
-    s32_lcl_return_from_function = RETURN_FAILURE;
-    s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_pssd_malloc_data->etype_mutex_parameter_);
-
-    /**
-    * Check if function to lock the mutex parameter succeeded
-    */
-    if(s32_lcl_return_from_function != 0)
-        {
-        /**
-        * Treat the case when the function to lock the mutex parameter failed
-        */
-
-        #ifdef DEVELOPEMENT
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
-        #endif
-
-        #ifdef DEMO
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
-        #endif
-
-        #ifdef PRODUCTION
-        ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
-        #endif
-
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_small_);
-        (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_large_);
-
-        /**
-        * Return failure to indicate the function to lock the mutex parameter failed
-        */
-        return (RETURN_FAILURE);
-        }
-    else
-        {
-        /**
-        * Treat the case when function to lock the mutex parameter succeeded
-        */
-        } 
+#ifdef DEVELOPEMENT
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex tiny failed\n", __FILE__, __func__, __LINE__);
 #endif
 
-    //TODO munmap all list of heap
+#ifdef DEMO
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+#endif
+
+#ifdef PRODUCTION
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
+#endif
+
+            /**
+             * Return failure to indicate the function to lock the mutex tiny failed
+             */
+            return (RETURN_FAILURE);
+            }
+        else
+            {
+            /**
+             * Treat the case when function to lock the mutex tiny succeeded
+             */
+            } 
+
+        /**
+         * Locking the mutex small
+         */
+        s32_lcl_return_from_function = RETURN_FAILURE;
+        s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_glbl_malloc_data->etype_mutex_small_);
+
+        /**
+         * Check if function to lock the mutex small succeeded
+         */
+        if(s32_lcl_return_from_function != 0)
+            {
+            /**
+             * Treat the case when the function to lock the mutex small failed
+             */
+
+#ifdef DEVELOPEMENT
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex small failed\n", __FILE__, __func__, __LINE__);
+#endif
+
+#ifdef DEMO
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+#endif
+
+#ifdef PRODUCTION
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
+#endif
+
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
+
+            /**
+             * Return failure to indicate the function to lock the mutex small failed
+             */
+            return (RETURN_FAILURE);
+            }
+        else
+            {
+            /**
+             * Treat the case when function to lock the mutex small succeeded
+             */
+            } 
+
+        /**
+         * Locking the mutex large
+         */
+        s32_lcl_return_from_function = RETURN_FAILURE;
+        s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_glbl_malloc_data->etype_mutex_large_);
+
+        /**
+         * Check if function to lock the mutex large succeeded
+         */
+        if(s32_lcl_return_from_function != 0)
+            {
+            /**
+             * Treat the case when the function to lock the mutex large failed
+             */
+
+#ifdef DEVELOPEMENT
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex large failed\n", __FILE__, __func__, __LINE__);
+#endif
+
+#ifdef DEMO
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+#endif
+
+#ifdef PRODUCTION
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
+#endif
+
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_small_);
+
+            /**
+             * Return failure to indicate the function to lock the mutex large failed
+             */
+            return (RETURN_FAILURE);
+            }
+        else
+            {
+            /**
+             * Treat the case when function to lock the mutex large succeeded
+             */
+            } 
+
+        /**
+         * Locking the mutex parameter
+         */
+        s32_lcl_return_from_function = RETURN_FAILURE;
+        s32_lcl_return_from_function = pthread_mutex_lock(&ptr_cstc_glbl_malloc_data->etype_mutex_parameter_);
+
+        /**
+         * Check if function to lock the mutex parameter succeeded
+         */
+        if(s32_lcl_return_from_function != 0)
+            {
+            /**
+             * Treat the case when the function to lock the mutex parameter failed
+             */
+
+#ifdef DEVELOPEMENT
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m in function \033[1m%s\033[0m at line \033[1m%d\033[0m\n    The function to lock the mutex parameter failed\n", __FILE__, __func__, __LINE__);
+#endif
+
+#ifdef DEMO
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m: in file \033[1m%s\033[0m at line \033[1m%s\033[0m\n", __FILE__, __LINE__);
+#endif
+
+#ifdef PRODUCTION
+            ft_fprintf(STDERR_FILENO, "\033[1;31mERROR\033[0m\n");
+#endif
+
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_small_);
+            (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_large_);
+
+            /**
+             * Return failure to indicate the function to lock the mutex parameter failed
+             */
+            return (RETURN_FAILURE);
+            }
+        else
+            {
+            /**
+             * Treat the case when function to lock the mutex parameter succeeded
+             */
+            } 
+        }
+#endif
 
     /**
     * Setting all the value of the global status of the structure to false
@@ -1202,15 +1217,18 @@ uint8_t Fu8__close_structure_malloc_data(struct cstc_malloc_data *ptr_cstc_pssd_
     ptr_cstc_pssd_malloc_data->u64_small_alloc_max_ = 0;
 
 #ifdef THREAD_SAFE
-    (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-    (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_small_);
-    (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_large_);
-    (void) pthread_mutex_unlock(&ptr_cstc_pssd_malloc_data->etype_mutex_parameter_);
+    if(ptr_cstc_glbl_malloc_data != NULL)
+        {
+        (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
+        (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_small_);
+        (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_large_);
+        (void) pthread_mutex_unlock(&ptr_cstc_glbl_malloc_data->etype_mutex_parameter_);
 
-    (void) pthread_mutex_destroy(&ptr_cstc_pssd_malloc_data->etype_mutex_tiny_);
-    (void) pthread_mutex_destroy(&ptr_cstc_pssd_malloc_data->etype_mutex_small_);
-    (void) pthread_mutex_destroy(&ptr_cstc_pssd_malloc_data->etype_mutex_large_);
-    (void) pthread_mutex_destroy(&ptr_cstc_pssd_malloc_data->etype_mutex_parameter_);
+        (void) pthread_mutex_destroy(&ptr_cstc_glbl_malloc_data->etype_mutex_tiny_);
+        (void) pthread_mutex_destroy(&ptr_cstc_glbl_malloc_data->etype_mutex_small_);
+        (void) pthread_mutex_destroy(&ptr_cstc_glbl_malloc_data->etype_mutex_large_);
+        (void) pthread_mutex_destroy(&ptr_cstc_glbl_malloc_data->etype_mutex_parameter_);
+        }
 #endif
 
     /**
