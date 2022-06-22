@@ -67,7 +67,7 @@ $(NAME): options $(OBJ)
 	@$(MAKE) -C $(LIB_DIRECTORY) --no-print-directory
 	@$(CC) -shared $(CFLAGS) -o $@ $(OBJ) $(LDFLAGS)
 	@echo "  BUILD    $@"
-	@ln --force --symbolic $@ libft_malloc.so
+	@ln -f -s $@ libft_malloc.so
 	@echo "  BUILD    libft_malloc.so"
 
 TEST: re
